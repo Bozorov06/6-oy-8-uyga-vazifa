@@ -31,7 +31,7 @@ function App() {
           <Route path="/register" element={<Register />} />
         </Routes>
       </LanguageContext.Provider>
-    </ThemeContext.Provider >
+    </ThemeContext.Provider>
   );
 }
 
