@@ -10,7 +10,7 @@ export const LanguageContext = createContext();
 export const ThemeContext = createContext()
 
 function App() {
-  const [language, setLanguage ] = useState('uzb')
+  const [language, setLanguage ] = useState('uz')
   const [theme, setTheme] = useState("light")
   const [token , setToken] = useState(localStorage.getItem('token'));
   const navigate = useNavigate();
