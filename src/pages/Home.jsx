@@ -1,12 +1,14 @@
-import React, {useContext} from 'react'
-import { LanguageContext, ThemeContext } from '../App'
+import React, { useContext } from "react";
+import { LanguageContext, ThemeContext } from "../App";
 
 function Home() {
-  const {language, setLanguage} = useContext(LanguageContext)
+  const { language, setLanguage } = useContext(LanguageContext);
   const { theme, setTheme } = useContext(ThemeContext);
 
-  setLanguage('rus')
-  setLanguage('eng')
+  function handleChange(){
+    setLanguage= ('eng')
+    setLanguage= ('rus')
+  }
   return (
     <div>
       <h3>{theme}</h3>
@@ -31,4 +33,4 @@ function Home() {
   );
 }
 
-export default Home
+export default Home;
